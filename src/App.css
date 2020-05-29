@@ -7,6 +7,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   z-index: 1;
+  color:#584d4d;
 }
 
 
@@ -110,9 +111,21 @@ li .link:hover{
   display: flex;
   flex-direction: row;
 }
-.about-content{
+.About {
   position: relative;
-  left:20%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  top: 4em;
+}
+.about-content{
+  /* position: relative;
+  left:10em; */
+}
+.about img{
+  width: 30em;
 }
 .about-content h1{
   font-family: 'Montserrat', sans-serif;
@@ -125,17 +138,14 @@ li .link:hover{
   width: 31em;
   line-height: 2em;
 }
-.about img{
-  margin-left: 19%;
-  width:25%
-}
 .work{
   position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  left:20%;
-  top:8em;
-  align-items: flex-start;
+  align-items: center;
+  color: black;
+  top: 4em;
 }
 .work .heading{
   font-family: 'Montserrat', sans-serif;
@@ -150,11 +160,12 @@ li .link:hover{
 
 .skills{
   position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  left: 20%;
-  top: 8em;
-  align-items: flex-start;
+  align-items: center;
+  color: black;
+  top: 10em;
 }
 .skills .heading{
   font-family: 'Montserrat', sans-serif;
@@ -168,18 +179,23 @@ li .link:hover{
   grid-gap: 0%;
 }
 .skills .skills-content>div{
-  width: 26em;
+  width: 25em;
 }
 
 .project img{
+  margin-top: 2em;
 width: 23em;  
-height: 22em;
+height: 14em;
 }
 .contact{
+  top: 2em;
   position: relative;
-  top:20em;
-  left:20%;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact>div{
+  width: 79em;
 }
 .contact h1{
     font-family: 'Montserrat', sans-serif;
@@ -210,7 +226,6 @@ height: 22em;
   position: relative;
   top: 2em;
   padding: 1em;
-  margin-left: 24%;
 }
 .footer a{
   text-decoration: none;
